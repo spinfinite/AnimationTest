@@ -28,7 +28,11 @@
 
     CAKeyframeAnimation *orbit = [CAKeyframeAnimation animation];
     orbit.keyPath = @"position";
-    orbit.path = CFAutorelease(CGPathCreateWithRect(CGRectMake(0, 0, self.view.bounds.size.width - 20, self.view.bounds.size.height - 20), NULL));
+    
+    CGRect boundsMinusSize = CGRectMake(0, 0, self.view.bounds.size.width - 20
+                                        , self.view.bounds.size.height - 20);
+    
+    orbit.path = CFAutorelease(CGPathCreateWithRect(boundsMinusSize, NULL));
     orbit.duration = 4;
     orbit.additive = YES;
     orbit.repeatCount = HUGE_VALF;
