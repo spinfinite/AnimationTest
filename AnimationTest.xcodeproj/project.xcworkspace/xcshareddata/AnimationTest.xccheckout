@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DDCEB317-142E-4239-AB2E-95E11336B1E8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimationTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C5D8CEF1583135680BDC2F5E201A7FD88241057B</key>
+		<string>https://github.com/spinfinite/AnimationTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimationTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C5D8CEF1583135680BDC2F5E201A7FD88241057B</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/spinfinite/AnimationTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C5D8CEF1583135680BDC2F5E201A7FD88241057B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5D8CEF1583135680BDC2F5E201A7FD88241057B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AnimationTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>

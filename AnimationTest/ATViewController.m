@@ -10,6 +10,8 @@
 
 @interface ATViewController ()
 
+@property (nonatomic, strong) UIView *blueSquare;
+
 @end
 
 @implementation ATViewController
@@ -17,7 +19,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *blueSquare = [[UIView alloc]initWithFrame:CGRectMake(60, 60, 60, 60)];
+    blueSquare.backgroundColor = [UIColor blueColor];
+    [self.view addSubview:blueSquare];
+    self.blueSquare = blueSquare;
+
+    CGRect boundingRect = CGRectMake(-60, 0, 260, 450);
+    
+    CAKeyframeAnimation *orbit = [CAKeyframeAnimation animation];
+    orbit.keyPath = @"position";
+    orbit.path = CFAutorelease(CGPathCreateWithRect(boundingRect, NULL));
+    orbit.duration = 4;
+    orbit.additive = YES;
+    orbit.repeatCount = HUGE_VALF;
+    orbit.calculationMode = kCAAnimationPaced;
+    orbit.rotationMode = kCAAnimationRotateAuto;
+    
+    [self.blueSquare.layer addAnimation:orbit forKey:@"orbit"];
 }
 
 - (void)didReceiveMemoryWarning
